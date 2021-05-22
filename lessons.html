@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>School -- Student System</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="vertical-layout">
+    <!-- Start Containerbar -->
+    <div id="containerbar">
+        <!-- Start Leftbar -->
+        <div class="leftbar">
+            <!-- Start Sidebar -->
+            <div class="sidebar">
+                <!-- Start Logobar -->
+                <div class="logobar">
+                    <a href="students.html" class="logo logo-large"><img src="assets/images/logo.svg" class="img-fluid"
+                            alt="logo"></a>
+                    <a href="students.html" class="logo logo-small"><img src="assets/images/small_logo.svg"
+                            class="img-fluid" alt="logo"></a>
+                </div>
+                <!-- End Logobar -->
+
+                <!-- Start Navigationbar -->
+                <div class="navigationbar">
+                    <ul class="vertical-menu">
+                        <li>
+                            <a href="students.html">
+                                <img src="assets/images/svg-icon/user.svg" class="img-fluid"
+                                    alt="dashboard"><span>Students</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="lessons.html">
+                                <img src="assets/images/svg-icon/dashboard.svg" class="img-fluid"
+                                    alt="dashboard"><span>Lessons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exams.html">
+                                <img src="assets/images/svg-icon/tables.svg" class="img-fluid"
+                                    alt="dashboard"><span>Exams</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navigationbar -->
+            </div>
+            <!-- End Sidebar -->
+        </div>
+        <!-- End Leftbar -->
+
+        <!-- Start Rightbar -->
+        <div class="rightbar">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="students.html" class="mobile-logo"><img src="assets/images/logo.svg" class="img-fluid"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/horizontal.svg"
+                                                class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="assets/images/svg-icon/verticle.svg"
+                                                class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/collapse.svg"
+                                                class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg"
+                                                class="img-fluid menu-hamburger-close" alt="close">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar">
+                <!-- Start row -->
+                <div class="row align-items-center">
+                    <!-- Start col -->
+                    <div class="col-md-12 align-self-center">
+                        <div class="togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/collapse.svg"
+                                                class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg"
+                                                class="img-fluid menu-hamburger-close" alt="close">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Topbar -->
+            <!-- Start Breadcrumbbar -->
+            <div class="breadcrumbbar">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                        <h4 class="page-title">Lessons List</h4>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="widgetbar">
+                            <a href="add-lesson.html" class="btn btn-primary-rgba"><i
+                                    class="feather icon-plus mr-2"></i>Add New Lesson</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Breadcrumbbar -->
+
+            <!-- Start Contentbar -->
+            <div class="contentbar">
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-lesson">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Lesson Name</th>
+                                                <th>Teacher Name</th>
+                                                <th>Teacher Surname</th>
+                                                <th>Class</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+
+                <!-- Edit Modal -->
+                <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Lesson Information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Lesson Name</label>
+                                            <input type="text" class="form-control" id="inputName" placeholder="Lesson Name">
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Class</label>
+                                            <input type="number" class="form-control" id="inputName" placeholder="Class">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputSurName">Teacher Name</label>
+                                            <input type="text" class="form-control" id="inputSurName" placeholder="Teacher Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="classNumber">Teacher Surname</label>
+                                            <input type="text" class="form-control" id="classNumber" placeholder="Teacher Surname">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delete Modal -->
+                <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Delete Lesson</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure to delete Lesson?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" id="confirmDell" class="btn btn-primary">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contentbar -->
+            
+        </div>
+        <!-- End Rightbar -->
+    </div>
+    <!-- End Containerbar -->
+
+    <!-- Start js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vertical-menu.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/core.js"></script> -->
+    <!-- End js -->
+</body>
+
+</html>
